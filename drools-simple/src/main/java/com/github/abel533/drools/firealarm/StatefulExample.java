@@ -43,8 +43,5 @@ public class StatefulExample {
         ksession.delete( officeFireHandle );
 
         ksession.fireAllRules();
-
-
-
     }
 }
