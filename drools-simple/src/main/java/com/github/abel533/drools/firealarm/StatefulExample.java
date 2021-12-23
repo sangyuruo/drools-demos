@@ -35,6 +35,7 @@ public class StatefulExample {
         FactHandle kitchenFireHandle = ksession.insert( kitchenFire );
         FactHandle officeFireHandle = ksession.insert( officeFire );
 
+        //火警触发
         ksession.fireAllRules();
 
         //灭火成功

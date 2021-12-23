@@ -1,5 +1,8 @@
 package com.github.abel533.drools.firealarm;
 
+/**
+ * 洒水器
+ */
 public class Sprinkler {
     private Room room;
     private boolean on;

@@ -10,6 +10,16 @@
 
 最简单的 drools 示例，可以用于练习规则语法等。
 
+里面有个比较好的例子 - 火警
+- 房间安装灭火器 - 就绪
+- 房间着火 - 事件触发 - 新建fire事件
+- 创建报警 - 新建alarm事件
+- 灭火 - 启用灭火器 - 状态开启on
+- 火被灭 - 删除fire事件
+- 关闭灭火器 - 状态关闭off
+- 取消报警 - 删除alarm事件
+
+
 ## 2. drools-xls 项目
 
 使用决策表的例子，通过 Excel(xls) 批量创建规则。
@@ -37,3 +47,18 @@
 - `PersonAutoUpdateClient` 示例增加了 [`KieScanner`](https://docs.jboss.org/drools/release/7.7.0.Final/drools-docs/html_single/index.html#_kiescanner_2) 动态监测规则更新。
 
 > `KieSession` 需要在更新后重新获取，旧的 Session 仍然使用旧的规则，重新获取后可以使用新的规则。
+
+### 3.4 测试方法
+直接启动 drools-client 中的PersonClient或PersonAutoUpdateClient。
+
+
+## 4 总结
+本demo主要演示了  
+- drools 的简单用法
+- 如何通过maven动态更新规则集
+- 决策表简单用法
+
+说明
+- 规则存储在文件中
+
+
